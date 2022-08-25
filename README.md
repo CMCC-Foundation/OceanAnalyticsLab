@@ -1,10 +1,26 @@
-# Mockup method
+# Overview
 
-This is a simple tools to deploy a working method on D4Science.
-In this method the first  prototype version of *daccess* module is released.
-With this module it is possible to download netCDF files from WEkEO and StorageHub.
+This is a simple tool that developers can deploy on D4Science, following the tutorial xxx.
+The repository includes prototype versions of modules which are implementing several functionalities, such as 
+the **data access**, the interpretation of **input parameters**, the generation of **static preview plots**, 
+the generation of **logging information**.
+The implemented mockup method inside the repository shows how to download netCDF files from WEkEO and StorageHub, 
+and how to receive the input parameters from an external call.
 
-## Instruction
+
+## How to implement a new method
+
+New algorithms can be implemented in new methods with their specific interface for the inputs and outputs.
+
+The mockup method can generally be considered as a convenient baseline for a new implementation, which will have its own
+input parameters, access and download of the input data, processing, and output preparation.
+
+To ease the following integration between interface/s and method/s, the recommended best practice consists 
+in implementing also a corresponding new mockup method which implement the new input/output interface, without actual actions 
+(i.e.: data download, processing,...). 
+
+
+## Instructions to use the mockup method
 
 ### Preparation
 To run this tools locally, follow this steps:
