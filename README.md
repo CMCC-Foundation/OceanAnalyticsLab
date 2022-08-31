@@ -1,6 +1,6 @@
 # Overview
 
-This is a simple tool that developers can deploy on D4Science, following the tutorial xxx.
+This is a simple tool that developers can deploy on D4Science, following the tutorial **mockup_method_guide.pptx**.
 The repository includes prototype versions of modules which are implementing several functionalities, such as 
 the **data access**, the interpretation of **input parameters**, the generation of **static preview plots**, 
 the generation of **logging information**.
