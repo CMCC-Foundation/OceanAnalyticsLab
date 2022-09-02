@@ -1,4 +1,4 @@
-# Overview
+# Algorithm Development Framework
 
 This is a simple tool that developers can deploy on D4Science, following the tutorial **mockup_method_guide.pptx**.
 The repository includes prototype versions of modules which are implementing several functionalities, such as 
@@ -7,8 +7,15 @@ the generation of **logging information**.
 The implemented mockup method inside the repository shows how to download netCDF files from WEkEO and StorageHub, 
 and how to receive the input parameters from an external call.
 
+# The VLab Marine Environmental Indicators
 
-## How to implement a new method
+xxx what resources it is federating, TRL
+
+# The Interoperability Challenge
+
+xxx FAIR, data, algorithms, catalogue
+
+# How to Implement a new Algorithm
 
 New algorithms can be implemented in new methods with their specific interface for the inputs and outputs.
 
@@ -71,3 +78,13 @@ or
 - `python mockup.py "{ 'id_output_type': 'mockup_input_read', 'id_field': 'mass_concentration_of_chlorophyll_a_in_sea_water', 'data_source': ['OCEANCOLOUR_MED_CHL_L4_NRT_OBSERVATIONS_009_041'], 'working_domain': {'box': [[-6,30.15625,36.28125,45.96875]], 'depth_layers': [[1.472102,5334.648]]}, 'start_time': '2020-07', 'end_time': '2020-07'}"` -> download from WEkEO
 
 - `python mockup.py "{ 'id_output_type': 'mockup_input_read', 'id_field': 'wind_speed', 'data_source': ['C3S_ERA5_MEDSEA_1979_2020_STHUB'], 'working_domain': { 'box': [[-6, 30.15625, 36.28125, 45.96875]], 'depth_layers': [[1.472102, 5334.648]] }, 'start_time': '1979-01-01', 'end_time': '2021-01-31' }"` -> download from StorageHub (plot is not produced)
+
+
+# References
+
+- The VLab Marine Environmental Indicators, https://blue-cloud.d4science.org/web/marineenvironmentalindicators/
+- Drudi, Massimiliano; Palermo, Francesco; Mariani, Antonio; Lecci, Rita; Garcia Juan, Andrea; Balem, Kevin; Maze, Guillaume; Bachelot, Loïc; Noteboom, Jan Willem; Pfeil, Benjamin; Castaño-Primo, Rocío; Paul, Julien; Dussurget, Renaud; Arnaud, Alain. (2022). Test the Blue-Cloud Virtual Labs: Marine Environmental Indicators. https://doi.org/10.5281/zenodo.6628701 
+- National Academies of Sciences, Engineering, and Medicine. 2019. Reproducibility and Replicability in Science. Washington, DC: The National Academies Press. https://doi.org/10.17226/25303.
+- European Commission, Directorate-General for Research and Innovation, Turning FAIR into reality : final report and action plan from the European Commission expert group on FAIR data, Publications Office, 2018, https://data.europa.eu/doi/10.2777/1524
+- Héder, Mihály. (2017). From NASA to EU: the evolution of the TRL scale in Public Sector Innovation. Innovation Journal. 22. 1. URL: https://www.innovation.cc/volumes-issues/vol22-no2.htm
+- Paul Groth; Luc Moreau; eds. PROV-OVERVIEW: An Overview of the PROV Family of Documents. 30 April 2013, W3C Note. URL: http://www.w3.org/TR/2013/NOTE-prov-overview-20130430/
