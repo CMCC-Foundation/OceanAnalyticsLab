@@ -1,4 +1,4 @@
-# Algorithm Development Framework
+# Marine Environmental Indicators Development Toolkit
 
 This is a simple tool that developers can deploy on D4Science, following the tutorial **mockup_method_guide.pptx**.
 The repository includes prototype versions of modules which are implementing several functionalities, such as 
@@ -7,15 +7,52 @@ the generation of **logging information**.
 The implemented mockup method inside the repository shows how to download netCDF files from WEkEO and StorageHub, 
 and how to receive the input parameters from an external call.
 
+Ref
+- Santoro, M.; Mazzetti, P.; Nativi, S. The VLab Framework: An Orchestrator Component to Support Data to Knowledge Transition. Remote Sens. 2020, 12, 1795. https://doi.org/10.3390/rs12111795 
+- Stefano Nativi, Mattia Santoro, Gregory Giuliani & Paolo Mazzetti (2020) Towards a knowledge base to support global change policy goals, International Journal of Digital Earth, 13:2, 188-216, DOI: 10.1080/17538947.2018.1559367
+
+
 # The VLab Marine Environmental Indicators
 
 xxx what resources it is federating, TRL
+- objective and target users, with some explanation
+- [Accessible] open data from multiple RI, open source in support to open science and replicability
+
+Ref
+- The VLab Marine Environmental Indicators, https://blue-cloud.d4science.org/web/marineenvironmentalindicators/
+- Drudi, Massimiliano; Palermo, Francesco; Mariani, Antonio; Lecci, Rita; Garcia Juan, Andrea; Balem, Kevin; Maze, Guillaume; Bachelot, Loïc; Noteboom, Jan Willem; Pfeil, Benjamin; Castaño-Primo, Rocío; Paul, Julien; Dussurget, Renaud; Arnaud, Alain. (2022). Blue-Cloud Project, presentation. Test the Blue-Cloud Virtual Labs: Marine Environmental Indicators. https://doi.org/10.5281/zenodo.6628701 
+- Bachelot Loïc, Balem Kevin, Drago Federico, Drudi Massimiliano, & Garcia Juan Andrea. (2021). Blue-Cloud project, report. Applying machine learning methods to ocean patterns and ocean regimes indicators. Zenodo. https://doi.org/10.5281/zenodo.5896651
+- M. Assante, L. Candela, D. Castelli, R. Cirillo, G. Coro, L. Frosini, L. Lelii, F. Mangiacrapa, P. Pagano, G. Panichi, F. Sinibaldi, Enacting open science by D4Science, Future Generation Computer Systems, Volume 101, 2019, Pages 555-563, ISSN 0167-739X, https://doi.org/10.1016/j.future.2019.05.063.
+- National Academies of Sciences, Engineering, and Medicine. 2019. Reproducibility and Replicability in Science. Washington, DC: The National Academies Press. https://doi.org/10.17226/25303.
+- The Global Risks Report 2022, 17th Edition, World Economic Forum, ISBN: 978-2-940631-09-4
 
 # The Interoperability Challenge
 
 xxx FAIR, data, algorithms, catalogue
+- fixing the standard: metadata convention for datasets and algorithms
+- [Interoperable] integration of algorithms with other tools
+- [reusable] provenance info, also for assessing the most convenient solution
+
+Ref
+- Hoogenkamp Bram, Farshidi Siamak, Xin Ruyue, Shi Zeshun, Chen Peng, & Zhao Zhiming. (2022, March 22). conference paper. A Decentralized Service Control framework for Decentralized Applications in Cloud Environments. 9th European Conference On Service-Oriented And Cloud Computing (ESOCC), Online. https://doi.org/10.1007/978-3-031-04718-3_4
+- Wang, Yuandou; Zhao, Zhiming. (2020, October 18). Decentralized workflow management on software defined infrastructure. Workshop on The 1st Workshop On Data-Centric Workflows On Heterogeneous Infrastructures: Challenges And Directions (DAWHI), in the context of IEEE Service Congress (DAWHI, IEEE Service), Online. https://doi.org/10.1109/SERVICES48979.2020.00059
+- European Commission, Directorate-General for Research and Innovation, Turning FAIR into reality : final report and action plan from the European Commission expert group on FAIR data, Publications Office, 2018, https://data.europa.eu/doi/10.2777/1524
+- Paul Groth; Luc Moreau; eds. PROV-OVERVIEW: An Overview of the PROV Family of Documents. 30 April 2013, W3C Note. URL: http://www.w3.org/TR/2013/NOTE-prov-overview-20130430/
+- Héder, Mihály. (2017). From NASA to EU: the evolution of the TRL scale in Public Sector Innovation. Innovation Journal. 22. 1. URL: https://www.innovation.cc/volumes-issues/vol22-no2.htm
 
 # How to Implement a new Algorithm
+
+Ref
+- Balem Kevin, Garcia Juan Andrea, Bachelot Loïc, & Maze Guillaume. (2022, May 25). Blue-Cloud project, presentation. Blue-Cloud Marine Environmental Indicators Virtual Lab - The Ocean Regimes Notebook. Zenodo. https://doi.org/10.5281/zenodo.6584430 
+- Pittonet Sara, Giuffrida Rita, Mari Marialetizia, & Schaap Dick. (2022). Blue-Cloud Project, Deliverable D6.1, Fact Sheets for cluster projects and other core initiatives (Release 1) (Version 1). Zenodo. https://doi.org/10.5281/zenodo.5549789
+- Héder, Mihály. (2017). From NASA to EU: the evolution of the TRL scale in Public Sector Innovation. Innovation Journal. 22. 1. URL: https://www.innovation.cc/volumes-issues/vol22-no2.htm
+- Paul Groth; Luc Moreau; eds. PROV-OVERVIEW: An Overview of the PROV Family of Documents. 30 April 2013, W3C Note. URL: http://www.w3.org/TR/2013/NOTE-prov-overview-20130430/
+
+
+- TRL:
+lab -> Jupyter Notebook, command line
+relevant environment -> VLab dev (multiple small local datasets)
+production environment -> VLab production or web application
 
 New algorithms can be implemented in new methods with their specific interface for the inputs and outputs.
 
@@ -82,8 +119,18 @@ or
 
 # References
 
+- TBC handbook, roadmap, exploitation plan...
 - The VLab Marine Environmental Indicators, https://blue-cloud.d4science.org/web/marineenvironmentalindicators/
-- Drudi, Massimiliano; Palermo, Francesco; Mariani, Antonio; Lecci, Rita; Garcia Juan, Andrea; Balem, Kevin; Maze, Guillaume; Bachelot, Loïc; Noteboom, Jan Willem; Pfeil, Benjamin; Castaño-Primo, Rocío; Paul, Julien; Dussurget, Renaud; Arnaud, Alain. (2022). Test the Blue-Cloud Virtual Labs: Marine Environmental Indicators. https://doi.org/10.5281/zenodo.6628701 
+- Drudi, Massimiliano; Palermo, Francesco; Mariani, Antonio; Lecci, Rita; Garcia Juan, Andrea; Balem, Kevin; Maze, Guillaume; Bachelot, Loïc; Noteboom, Jan Willem; Pfeil, Benjamin; Castaño-Primo, Rocío; Paul, Julien; Dussurget, Renaud; Arnaud, Alain. (2022). Blue-Cloud Project, presentation. Test the Blue-Cloud Virtual Labs: Marine Environmental Indicators. https://doi.org/10.5281/zenodo.6628701 
+- Balem Kevin, Garcia Juan Andrea, Bachelot Loïc, & Maze Guillaume. (2022, May 25). Blue-Cloud project, presentation. Blue-Cloud Marine Environmental Indicators Virtual Lab - The Ocean Regimes Notebook. Zenodo. https://doi.org/10.5281/zenodo.6584430 
+- Pittonet Sara, Giuffrida Rita, Mari Marialetizia, & Schaap Dick. (2022). Blue-Cloud Project, Deliverable D6.1, Fact Sheets for cluster projects and other core initiatives (Release 1) (Version 1). Zenodo. https://doi.org/10.5281/zenodo.5549789
+- Hoogenkamp Bram, Farshidi Siamak, Xin Ruyue, Shi Zeshun, Chen Peng, & Zhao Zhiming. (2022, March 22). conference paper. A Decentralized Service Control framework for Decentralized Applications in Cloud Environments. 9th European Conference On Service-Oriented And Cloud Computing (ESOCC), Online. https://doi.org/10.1007/978-3-031-04718-3_4
+- The Global Risks Report 2022, 17th Edition, World Economic Forum, ISBN: 978-2-940631-09-4
+- Bachelot Loïc, Balem Kevin, Drago Federico, Drudi Massimiliano, & Garcia Juan Andrea. (2021). Blue-Cloud project, report. Applying machine learning methods to ocean patterns and ocean regimes indicators. Zenodo. https://doi.org/10.5281/zenodo.5896651
+- Wang, Yuandou; Zhao, Zhiming. (2020, October 18). Decentralized workflow management on software defined infrastructure. Workshop on The 1st Workshop On Data-Centric Workflows On Heterogeneous Infrastructures: Challenges And Directions (DAWHI), in the context of IEEE Service Congress (DAWHI, IEEE Service), Online. https://doi.org/10.1109/SERVICES48979.2020.00059
+- Santoro, M.; Mazzetti, P.; Nativi, S. The VLab Framework: An Orchestrator Component to Support Data to Knowledge Transition. Remote Sens. 2020, 12, 1795. https://doi.org/10.3390/rs12111795 
+- Stefano Nativi, Mattia Santoro, Gregory Giuliani & Paolo Mazzetti (2020) Towards a knowledge base to support global change policy goals, International Journal of Digital Earth, 13:2, 188-216, DOI: 10.1080/17538947.2018.1559367
+- M. Assante, L. Candela, D. Castelli, R. Cirillo, G. Coro, L. Frosini, L. Lelii, F. Mangiacrapa, P. Pagano, G. Panichi, F. Sinibaldi, Enacting open science by D4Science, Future Generation Computer Systems, Volume 101, 2019, Pages 555-563, ISSN 0167-739X, https://doi.org/10.1016/j.future.2019.05.063.
 - National Academies of Sciences, Engineering, and Medicine. 2019. Reproducibility and Replicability in Science. Washington, DC: The National Academies Press. https://doi.org/10.17226/25303.
 - European Commission, Directorate-General for Research and Innovation, Turning FAIR into reality : final report and action plan from the European Commission expert group on FAIR data, Publications Office, 2018, https://data.europa.eu/doi/10.2777/1524
 - Héder, Mihály. (2017). From NASA to EU: the evolution of the TRL scale in Public Sector Innovation. Innovation Journal. 22. 1. URL: https://www.innovation.cc/volumes-issues/vol22-no2.htm
