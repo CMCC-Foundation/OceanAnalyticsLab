@@ -1,5 +1,25 @@
-# Marine Environmental Indicators Development Toolkit
+# MEI Development Toolkit
 
+This toolkit contributes to the change of paradigm process for the moving from a data-drive approach to a knowledge-driven one,
+focusing all the attention on the implementing methodology for processing services, first facilitating the exploitation of scientific model, with their implementation as geospatial processing services on the Internet.
+
+Starting from the adoption of OGC WPS specification, additional conventions and implementing modules are offered from the toolkit 
+to accelerate the developments and reduce the amount of programming, with a special focus to those related 
+to the processing of marine environmental indicators, today useful contribution to address the challenges 
+of UN Ocean Decade, and cope the major environmental risks.
+
+Ref
+- Stefano Nativi, Mattia Santoro, Gregory Giuliani & Paolo Mazzetti (2020) Towards a knowledge base to support global change policy goals, International Journal of Digital Earth, 13:2, 188-216, DOI: 10.1080/17538947.2018.1559367
+- United Nations Decade of Ocean Science for Sustainable Developments, Challenges, "Challenge 9 - Skills, knowledge and technology for all", https://www.oceandecade.org/challenges/
+- The Global Risks Report 2022, 17th Edition, World Economic Forum, ISBN: 978-2-940631-09-4
+- OGC WPS
+- European Commission, Directorate-General for Research and Innovation, Turning FAIR into reality : final report and action plan from the European Commission expert group on FAIR data, Publications Office, 2018, https://data.europa.eu/doi/10.2777/1524
+
+
+# The VLab Marine Environmental Indicators
+
+in the infrastructure D4Science. 
+developers of online algorithm providing a number of functionalities 
 This is a simple tool that developers can deploy on D4Science, following the tutorial **mockup_method_guide.pptx**.
 The repository includes prototype versions of modules which are implementing several functionalities, such as 
 the **data access**, the interpretation of **input parameters**, the generation of **static preview plots**, 
@@ -7,18 +27,12 @@ the generation of **logging information**.
 The implemented mockup method inside the repository shows how to download netCDF files from WEkEO and StorageHub, 
 and how to receive the input parameters from an external call.
 
-Ref
-- Santoro, M.; Mazzetti, P.; Nativi, S. The VLab Framework: An Orchestrator Component to Support Data to Knowledge Transition. Remote Sens. 2020, 12, 1795. https://doi.org/10.3390/rs12111795 
-- Stefano Nativi, Mattia Santoro, Gregory Giuliani & Paolo Mazzetti (2020) Towards a knowledge base to support global change policy goals, International Journal of Digital Earth, 13:2, 188-216, DOI: 10.1080/17538947.2018.1559367
-
-
-# The VLab Marine Environmental Indicators
-
 xxx what resources it is federating, TRL
 - objective and target users, with some explanation
 - [Accessible] open data from multiple RI, open source in support to open science and replicability
 
 Ref
+- Santoro, M.; Mazzetti, P.; Nativi, S. The VLab Framework: An Orchestrator Component to Support Data to Knowledge Transition. Remote Sens. 2020, 12, 1795. https://doi.org/10.3390/rs12111795
 - The VLab Marine Environmental Indicators, https://blue-cloud.d4science.org/web/marineenvironmentalindicators/
 - Drudi, Massimiliano; Palermo, Francesco; Mariani, Antonio; Lecci, Rita; Garcia Juan, Andrea; Balem, Kevin; Maze, Guillaume; Bachelot, Loïc; Noteboom, Jan Willem; Pfeil, Benjamin; Castaño-Primo, Rocío; Paul, Julien; Dussurget, Renaud; Arnaud, Alain. (2022). Blue-Cloud Project, presentation. Test the Blue-Cloud Virtual Labs: Marine Environmental Indicators. https://doi.org/10.5281/zenodo.6628701 
 - Bachelot Loïc, Balem Kevin, Drago Federico, Drudi Massimiliano, & Garcia Juan Andrea. (2021). Blue-Cloud project, report. Applying machine learning methods to ocean patterns and ocean regimes indicators. Zenodo. https://doi.org/10.5281/zenodo.5896651
@@ -119,6 +133,8 @@ or
 
 # References
 
+- OGC Web Processing Service 1.0.0, 2007
+- United Nations Decade of Ocean Science for Sustainable Developments, Challenges, "Challenge 9 - Skills, knowledge and technology for all", https://www.oceandecade.org/challenges/
 - TBC handbook, roadmap, exploitation plan...
 - The VLab Marine Environmental Indicators, https://blue-cloud.d4science.org/web/marineenvironmentalindicators/
 - Drudi, Massimiliano; Palermo, Francesco; Mariani, Antonio; Lecci, Rita; Garcia Juan, Andrea; Balem, Kevin; Maze, Guillaume; Bachelot, Loïc; Noteboom, Jan Willem; Pfeil, Benjamin; Castaño-Primo, Rocío; Paul, Julien; Dussurget, Renaud; Arnaud, Alain. (2022). Blue-Cloud Project, presentation. Test the Blue-Cloud Virtual Labs: Marine Environmental Indicators. https://doi.org/10.5281/zenodo.6628701 
