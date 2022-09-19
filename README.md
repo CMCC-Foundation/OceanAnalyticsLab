@@ -18,7 +18,8 @@ inside the VRE framework D4Science. The VLab aims to provide analytic services t
 in the monitoring and management of marine areas. Also, the scientific developers play an important role and are part of the VLab users.
 The VLab offers several federated services, for the data access, storage and processing (Jupiter, OGC WPS,...), 
 which ease the development of new innovative solutions, and the sharing of results and achievements.
-Results: notebooks xxx, methods xxx, web application DSS/interface,...
+Results: notebooks xxx, web processing services xxx, web application DSS/interface,...
+TRL...
 
 Ref:
 - The VLab Marine Environmental Indicators, https://blue-cloud.d4science.org/web/marineenvironmentalindicators/
@@ -27,25 +28,22 @@ Ref:
 - M. Assante, L. Candela, D. Castelli, R. Cirillo, G. Coro, L. Frosini, L. Lelii, F. Mangiacrapa, P. Pagano, G. Panichi, F. Sinibaldi, Enacting open science by D4Science, Future Generation Computer Systems, Volume 101, 2019, Pages 555-563, ISSN 0167-739X, https://doi.org/10.1016/j.future.2019.05.063.
 - Santoro, M.; Mazzetti, P.; Nativi, S. The VLab Framework: An Orchestrator Component to Support Data to Knowledge Transition. Remote Sens. 2020, 12, 1795. https://doi.org/10.3390/rs12111795
 - United Nations Decade of Ocean Science for Sustainable Developments, Challenges, "Challenge 9 - Skills, knowledge and technology for all", https://www.oceandecade.org/challenges/
-
+- Héder, Mihály. (2017). From NASA to EU: the evolution of the TRL scale in Public Sector Innovation. Innovation Journal. 22. 1. URL: https://www.innovation.cc/volumes-issues/vol22-no2.htm
+- jupyter, WPS,...
 
 
 # The Interoperability Challenge
+Of great relevance the interoperability of results, is already well promoted for the data, and here in this toolkit 
+is also stressed for the processing. Indeed, inside a federated environment with many different data sources in 
+distributed catalogue, many different web processing services, the toolkit copes specific issues related 
+to the interoperability and exploitation of WPS, allowing or making easy/feasible the composition 
+of a complex analytic service, keeping also track of the dependencies for the generation of new output.
 
-This is a simple tool that developers can deploy on D4Science, following the tutorial **mockup_method_guide.pptx**.
-The repository includes prototype versions of modules which are implementing several functionalities, such as 
-the **data access**, the interpretation of **input parameters**, the generation of **static preview plots**, 
-the generation of **logging information**.
-The implemented mockup method inside the repository shows how to download netCDF files from WEkEO and StorageHub, 
-and how to receive the input parameters from an external call.
-
-xxx FAIR, data, algorithms, catalogue
-- data access, API design
-- WPS access, IDL specification
-- final log, W3P PROV
-- fixing the standard: metadata convention for datasets and algorithms
-- [Interoperable] integration of algorithms with other tools
-- [reusable] provenance info, also for assessing the most convenient solution
+The toolkit includes:
+- data access functionalities, based on generalized API (PANGEO?)
+- reader of input parameters, based on a generalized IDL
+- manager of logging/provenance information (will be based on W3C-PROV)
+- generator of plot, based on format NetCDF, convention xxx, and new convention defined here yyy
 
 Ref
 - National Academies of Sciences, Engineering, and Medicine. 2019. Reproducibility and Replicability in Science. Washington, DC: The National Academies Press. https://doi.org/10.17226/25303.
@@ -53,9 +51,16 @@ Ref
 - Wang, Yuandou; Zhao, Zhiming. (2020, October 18). Decentralized workflow management on software defined infrastructure. Workshop on The 1st Workshop On Data-Centric Workflows On Heterogeneous Infrastructures: Challenges And Directions (DAWHI), in the context of IEEE Service Congress (DAWHI, IEEE Service), Online. https://doi.org/10.1109/SERVICES48979.2020.00059
 - European Commission, Directorate-General for Research and Innovation, Turning FAIR into reality : final report and action plan from the European Commission expert group on FAIR data, Publications Office, 2018, https://data.europa.eu/doi/10.2777/1524
 - Paul Groth; Luc Moreau; eds. PROV-OVERVIEW: An Overview of the PROV Family of Documents. 30 April 2013, W3C Note. URL: http://www.w3.org/TR/2013/NOTE-prov-overview-20130430/
-- Héder, Mihály. (2017). From NASA to EU: the evolution of the TRL scale in Public Sector Innovation. Innovation Journal. 22. 1. URL: https://www.innovation.cc/volumes-issues/vol22-no2.htm
 
 # How to Implement a new Algorithm
+
+The repository includes prototype versions of modules which are implementing several functionalities, such as 
+the **data access**, the interpretation of **input parameters**, the generation of **static preview plots**, 
+the generation of **logging information**.
+
+This is a simple tool that developers can deploy on D4Science, following the tutorial **mockup_method_guide.pptx**.
+The implemented mockup method inside the repository shows how to download netCDF files from WEkEO and StorageHub, 
+and how to receive the input parameters from an external call.
 
 Ref
 - Balem Kevin, Garcia Juan Andrea, Bachelot Loïc, & Maze Guillaume. (2022, May 25). Blue-Cloud project, presentation. Blue-Cloud Marine Environmental Indicators Virtual Lab - The Ocean Regimes Notebook. Zenodo. https://doi.org/10.5281/zenodo.6584430 
