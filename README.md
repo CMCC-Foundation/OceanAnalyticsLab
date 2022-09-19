@@ -1,19 +1,14 @@
 # MEI Development Toolkit
 
-This toolkit contributes to the change of paradigm process for the moving from a data-drive approach to a knowledge-driven one,
-focusing all the attention on the implementing methodology for processing services, first facilitating the exploitation of scientific model, with their implementation as geospatial processing services on the Internet.
-
-Starting from the adoption of OGC WPS specification, additional conventions and implementing modules are offered from the toolkit 
-to accelerate the developments and reduce the amount of programming, with a special focus to those related 
-to the processing of marine environmental indicators, today useful contribution to address the challenges 
-of UN Ocean Decade, and cope the major environmental risks.
+This toolkit aims to underpin the development of scientific algorithms for the processing of geospatial data and information, 
+especially focusing their implementation in production environment. 
+The considered scope is to serve societal needs with the extraction of new knowledge, 
+that can be related to the healthiness of the marine environment, from big ocean data.
 
 Ref
 - Stefano Nativi, Mattia Santoro, Gregory Giuliani & Paolo Mazzetti (2020) Towards a knowledge base to support global change policy goals, International Journal of Digital Earth, 13:2, 188-216, DOI: 10.1080/17538947.2018.1559367
-- United Nations Decade of Ocean Science for Sustainable Developments, Challenges, "Challenge 9 - Skills, knowledge and technology for all", https://www.oceandecade.org/challenges/
+- United Nations Decade of Ocean Science for Sustainable Developments, Challenges, https://www.oceandecade.org/challenges/
 - The Global Risks Report 2022, 17th Edition, World Economic Forum, ISBN: 978-2-940631-09-4
-- OGC WPS
-- European Commission, Directorate-General for Research and Innovation, Turning FAIR into reality : final report and action plan from the European Commission expert group on FAIR data, Publications Office, 2018, https://data.europa.eu/doi/10.2777/1524
 
 
 # The VLab Marine Environmental Indicators
@@ -39,10 +34,15 @@ Ref
 - M. Assante, L. Candela, D. Castelli, R. Cirillo, G. Coro, L. Frosini, L. Lelii, F. Mangiacrapa, P. Pagano, G. Panichi, F. Sinibaldi, Enacting open science by D4Science, Future Generation Computer Systems, Volume 101, 2019, Pages 555-563, ISSN 0167-739X, https://doi.org/10.1016/j.future.2019.05.063.
 - National Academies of Sciences, Engineering, and Medicine. 2019. Reproducibility and Replicability in Science. Washington, DC: The National Academies Press. https://doi.org/10.17226/25303.
 - The Global Risks Report 2022, 17th Edition, World Economic Forum, ISBN: 978-2-940631-09-4
+- United Nations Decade of Ocean Science for Sustainable Developments, Challenges, "Challenge 9 - Skills, knowledge and technology for all", https://www.oceandecade.org/challenges/
+
 
 # The Interoperability Challenge
 
 xxx FAIR, data, algorithms, catalogue
+- data access, API design
+- WPS access, IDL specification
+- final log, W3P PROV
 - fixing the standard: metadata convention for datasets and algorithms
 - [Interoperable] integration of algorithms with other tools
 - [reusable] provenance info, also for assessing the most convenient solution
@@ -151,3 +151,15 @@ or
 - European Commission, Directorate-General for Research and Innovation, Turning FAIR into reality : final report and action plan from the European Commission expert group on FAIR data, Publications Office, 2018, https://data.europa.eu/doi/10.2777/1524
 - Héder, Mihály. (2017). From NASA to EU: the evolution of the TRL scale in Public Sector Innovation. Innovation Journal. 22. 1. URL: https://www.innovation.cc/volumes-issues/vol22-no2.htm
 - Paul Groth; Luc Moreau; eds. PROV-OVERVIEW: An Overview of the PROV Family of Documents. 30 April 2013, W3C Note. URL: http://www.w3.org/TR/2013/NOTE-prov-overview-20130430/
+
+
+
+
+This toolkit contributes to the change of paradigm process for the moving from a data-drive approach to a knowledge-driven one,
+focusing all the attention on the implementing methodology for processing services, first facilitating the exploitation 
+of scientific model, with their implementation as geospatial processing services on the Internet.
+
+Starting from the adoption of OGC WPS specification, additional conventions and implementing modules are offered from the toolkit 
+to accelerate the developments and reduce the amount of programming, with a special focus to those related 
+to the processing of marine environmental indicators, today useful contribution to address the challenges 
+of UN Ocean Decade, and cope the major environmental risks.
