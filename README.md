@@ -32,18 +32,22 @@ Ref:
 - jupyter, WPS,...
 
 
-# The Interoperability Challenge
-Of great relevance the interoperability of results, is already well promoted for the data, and here in this toolkit 
-is also stressed for the processing. Indeed, inside a federated environment with many different data sources in 
-distributed catalogue, many different web processing services, the toolkit copes specific issues related 
-to the interoperability and exploitation of WPS, allowing or making easy/feasible the composition 
-of a complex analytic service, keeping also track of the dependencies for the generation of new output.
+# The Interoperability and Reusability Challenges
+The exploitation of datasets and algorithms, without barriers for the scientific investigation, is highly desired, 
+and for the pursuing of this objective, the interoperability and reusability aspects play an important role. 
+Indeed, the toolkit copes several specific issues, that can rise when working in an infrastructure 
+with federated services for the access to different data sources from different catalogues available across Internet, 
+and for the execution of different web processing services.
+The expected outcome of using this toolkit is the capability to build, or compose, with a reasonable effort, 
+new customized analytic services, that embrace the needed or selected data sources and processing services. 
+In addition to that, keeping in mind how the scientific methodology works, the toolkit supports also the tracking of 
+information and dependencies for the assessment of output data.
 
 The toolkit includes:
-- data access functionalities, based on generalized API (PANGEO?)
+- data access functionalities, based on generalized API
 - reader of input parameters, based on a generalized IDL
 - manager of logging/provenance information (will be based on W3C-PROV)
-- generator of plot, based on format NetCDF, convention xxx, and new convention defined here yyy
+- plot generator, for data in NetCDF format, convention xxx, and new convention defined here yyy
 
 Ref
 - National Academies of Sciences, Engineering, and Medicine. 2019. Reproducibility and Replicability in Science. Washington, DC: The National Academies Press. https://doi.org/10.17226/25303.
@@ -51,6 +55,7 @@ Ref
 - Wang, Yuandou; Zhao, Zhiming. (2020, October 18). Decentralized workflow management on software defined infrastructure. Workshop on The 1st Workshop On Data-Centric Workflows On Heterogeneous Infrastructures: Challenges And Directions (DAWHI), in the context of IEEE Service Congress (DAWHI, IEEE Service), Online. https://doi.org/10.1109/SERVICES48979.2020.00059
 - European Commission, Directorate-General for Research and Innovation, Turning FAIR into reality : final report and action plan from the European Commission expert group on FAIR data, Publications Office, 2018, https://data.europa.eu/doi/10.2777/1524
 - Paul Groth; Luc Moreau; eds. PROV-OVERVIEW: An Overview of the PROV Family of Documents. 30 April 2013, W3C Note. URL: http://www.w3.org/TR/2013/NOTE-prov-overview-20130430/
+- PANGEO, A community platform for Big Data geoscience, https://pangeo.io/
 
 # How to Implement a new Algorithm
 
