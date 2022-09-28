@@ -5,7 +5,7 @@ especially focusing their implementation in production environment.
 The considered scope is to serve societal needs with the extraction of new knowledge, 
 that can be related to the healthiness of the marine environment, from big ocean data.
 
-Ref:
+###### References
 - Stefano Nativi, Mattia Santoro, Gregory Giuliani & Paolo Mazzetti (2020) Towards a knowledge base to support global change policy goals, International Journal of Digital Earth, 13:2, 188-216, DOI: 10.1080/17538947.2018.1559367
 - United Nations Decade of Ocean Science for Sustainable Developments, Challenges, https://www.oceandecade.org/challenges/
 - The Global Risks Report 2022, 17th Edition, World Economic Forum, ISBN: 978-2-940631-09-4
@@ -14,14 +14,17 @@ Ref:
 
 # The VLab Marine Environmental Indicators
 A new VLab to serve environmental monitoring activities was implemented in the scope of Blue-Cloud EU project, 
-inside the VRE framework D4Science. The VLab aims to provide analytic services to target users, who are usually active actors 
+inside the VRE framework D4Science. The VLab aims to provide analytics services to target users, who are usually active actors 
 in the monitoring and management of marine areas. Also, the scientific developers play an important role and are part of the VLab users.
 The VLab offers several federated services, for the data access, storage and processing (Jupiter, OGC WPS,...), 
 which ease the development of new innovative solutions, and the sharing of results and achievements.
 Results: notebooks xxx, web processing services xxx, web application DSS/interface,...
 TRL...
 
-Ref:
+spatial decision support system, GIS
+https://www.eoscsecretariat.eu/news-opinion/water-forecasts-agriculture-eosc-use-cases
+
+###### References
 - The VLab Marine Environmental Indicators, https://blue-cloud.d4science.org/web/marineenvironmentalindicators/
 - Drudi, Massimiliano; Palermo, Francesco; Mariani, Antonio; Lecci, Rita; Garcia Juan, Andrea; Balem, Kevin; Maze, Guillaume; Bachelot, Loïc; Noteboom, Jan Willem; Pfeil, Benjamin; Castaño-Primo, Rocío; Paul, Julien; Dussurget, Renaud; Arnaud, Alain. (2022). Blue-Cloud Project, presentation. Test the Blue-Cloud Virtual Labs: Marine Environmental Indicators. https://doi.org/10.5281/zenodo.6628701 
 - Bachelot Loïc, Balem Kevin, Drago Federico, Drudi Massimiliano, & Garcia Juan Andrea. (2021). Blue-Cloud project, report. Applying machine learning methods to ocean patterns and ocean regimes indicators. Zenodo. https://doi.org/10.5281/zenodo.5896651
@@ -39,7 +42,7 @@ Indeed, the toolkit copes several specific issues, that can rise when working in
 with federated services for the access to different data sources from different catalogues available across Internet, 
 and for the execution of different web processing services.
 The expected outcome of using this toolkit is the capability to build, or compose, with a reasonable effort, 
-new customized analytic services, that embrace the needed or selected data sources and processing services. 
+new customized analytics services, that embrace the needed or selected data sources and processing services. 
 In addition to that, keeping in mind how the scientific methodology works, the toolkit supports also the tracking of 
 information and dependencies for the assessment of output data.
 
@@ -49,7 +52,7 @@ The toolkit includes:
 - manager of logging/provenance information (will be based on W3C-PROV)
 - plot generator, for data in NetCDF format, convention xxx, and new convention defined here yyy
 
-Ref
+###### References
 - National Academies of Sciences, Engineering, and Medicine. 2019. Reproducibility and Replicability in Science. Washington, DC: The National Academies Press. https://doi.org/10.17226/25303.
 - Hoogenkamp Bram, Farshidi Siamak, Xin Ruyue, Shi Zeshun, Chen Peng, & Zhao Zhiming. (2022, March 22). conference paper. A Decentralized Service Control framework for Decentralized Applications in Cloud Environments. 9th European Conference On Service-Oriented And Cloud Computing (ESOCC), Online. https://doi.org/10.1007/978-3-031-04718-3_4
 - Wang, Yuandou; Zhao, Zhiming. (2020, October 18). Decentralized workflow management on software defined infrastructure. Workshop on The 1st Workshop On Data-Centric Workflows On Heterogeneous Infrastructures: Challenges And Directions (DAWHI), in the context of IEEE Service Congress (DAWHI, IEEE Service), Online. https://doi.org/10.1109/SERVICES48979.2020.00059
@@ -67,7 +70,7 @@ This is a simple tool that developers can deploy on D4Science, following the tut
 The implemented mockup method inside the repository shows how to download netCDF files from WEkEO and StorageHub, 
 and how to receive the input parameters from an external call.
 
-Ref
+###### References
 - Balem Kevin, Garcia Juan Andrea, Bachelot Loïc, & Maze Guillaume. (2022, May 25). Blue-Cloud project, presentation. Blue-Cloud Marine Environmental Indicators Virtual Lab - The Ocean Regimes Notebook. Zenodo. https://doi.org/10.5281/zenodo.6584430 
 - Pittonet Sara, Giuffrida Rita, Mari Marialetizia, & Schaap Dick. (2022). Blue-Cloud Project, Deliverable D6.1, Fact Sheets for cluster projects and other core initiatives (Release 1) (Version 1). Zenodo. https://doi.org/10.5281/zenodo.5549789
 - Héder, Mihály. (2017). From NASA to EU: the evolution of the TRL scale in Public Sector Innovation. Innovation Journal. 22. 1. URL: https://www.innovation.cc/volumes-issues/vol22-no2.htm
