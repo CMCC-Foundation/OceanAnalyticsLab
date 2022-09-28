@@ -1,53 +1,41 @@
 # MEI Development Toolkit
 
 This toolkit aims to underpin the development of scientific algorithms for the processing of geospatial data and information, 
-especially focusing their implementation in production environment. 
-The considered scope is to serve societal needs with the extraction of new knowledge, 
-that can be related to the healthiness of the marine environment, from big ocean data.
+and for the extraction of new knowledge and indicators to serve the decision makers.
+The considered scope is related to the environment protection and sustainability.
 
 ###### References
 - Stefano Nativi, Mattia Santoro, Gregory Giuliani & Paolo Mazzetti (2020) Towards a knowledge base to support global change policy goals, International Journal of Digital Earth, 13:2, 188-216, DOI: 10.1080/17538947.2018.1559367
 - United Nations Decade of Ocean Science for Sustainable Developments, Challenges, https://www.oceandecade.org/challenges/
 - The Global Risks Report 2022, 17th Edition, World Economic Forum, ISBN: 978-2-940631-09-4
 
-
-
 # The VLab Marine Environmental Indicators
-A new VLab to serve environmental monitoring activities was implemented in the scope of Blue-Cloud EU project, 
-inside the VRE framework D4Science. The VLab aims to provide analytics services to target users, who are usually active actors 
-in the monitoring and management of marine areas. Also, the scientific developers play an important role and are part of the VLab users.
-The VLab offers several federated services, for the data access, storage and processing (Jupiter, OGC WPS,...), 
-which ease the development of new innovative solutions, and the sharing of results and achievements.
-Results: notebooks xxx, web processing services xxx, web application DSS/interface,...
-TRL...
-
-spatial decision support system, GIS
-https://www.eoscsecretariat.eu/news-opinion/water-forecasts-agriculture-eosc-use-cases
+A new VLab for the environment monitoring was implemented inside the VRE framework D4Science, in the scope of Blue-Cloud EU project.
+The VLab aims to provide analytics services to those users who are involved in the monitoring and management of marine areas.
+The VLab offers also several federated services to the scientific developers, for the data access, 
+storage and processing, which ease the development of new innovative solutions, and the sharing of results.
 
 ###### References
 - The VLab Marine Environmental Indicators, https://blue-cloud.d4science.org/web/marineenvironmentalindicators/
 - Drudi, Massimiliano; Palermo, Francesco; Mariani, Antonio; Lecci, Rita; Garcia Juan, Andrea; Balem, Kevin; Maze, Guillaume; Bachelot, Loïc; Noteboom, Jan Willem; Pfeil, Benjamin; Castaño-Primo, Rocío; Paul, Julien; Dussurget, Renaud; Arnaud, Alain. (2022). Blue-Cloud Project, presentation. Test the Blue-Cloud Virtual Labs: Marine Environmental Indicators. https://doi.org/10.5281/zenodo.6628701 
+- Balem Kevin, Garcia Juan Andrea, Bachelot Loïc, & Maze Guillaume. (2022, May 25). Blue-Cloud project, presentation. Blue-Cloud Marine Environmental Indicators Virtual Lab - The Ocean Regimes Notebook. Zenodo. https://doi.org/10.5281/zenodo.6584430
+- Pittonet Sara, Giuffrida Rita, Mari Marialetizia, & Schaap Dick. (2022). Blue-Cloud Project, Deliverable D6.1, Fact Sheets for cluster projects and other core initiatives (Release 1) (Version 1). Zenodo. https://doi.org/10.5281/zenodo.5549789
 - Bachelot Loïc, Balem Kevin, Drago Federico, Drudi Massimiliano, & Garcia Juan Andrea. (2021). Blue-Cloud project, report. Applying machine learning methods to ocean patterns and ocean regimes indicators. Zenodo. https://doi.org/10.5281/zenodo.5896651
 - M. Assante, L. Candela, D. Castelli, R. Cirillo, G. Coro, L. Frosini, L. Lelii, F. Mangiacrapa, P. Pagano, G. Panichi, F. Sinibaldi, Enacting open science by D4Science, Future Generation Computer Systems, Volume 101, 2019, Pages 555-563, ISSN 0167-739X, https://doi.org/10.1016/j.future.2019.05.063.
 - Santoro, M.; Mazzetti, P.; Nativi, S. The VLab Framework: An Orchestrator Component to Support Data to Knowledge Transition. Remote Sens. 2020, 12, 1795. https://doi.org/10.3390/rs12111795
 - United Nations Decade of Ocean Science for Sustainable Developments, Challenges, "Challenge 9 - Skills, knowledge and technology for all", https://www.oceandecade.org/challenges/
 - Héder, Mihály. (2017). From NASA to EU: the evolution of the TRL scale in Public Sector Innovation. Innovation Journal. 22. 1. URL: https://www.innovation.cc/volumes-issues/vol22-no2.htm
-- jupyter, WPS,...
 
-
-# The Interoperability and Reusability Challenges
-The exploitation of datasets and algorithms, without barriers for the scientific investigation, is highly desired, 
+# The Interoperability and Reusability Challenge
+The exploitation of datasets and algorithms, without barriers for the scientific investigation, is a highly desired condition, 
 and for the pursuing of this objective, the interoperability and reusability aspects play an important role. 
-Indeed, the toolkit copes several specific issues, that can rise when working in an infrastructure 
-with federated services for the access to different data sources from different catalogues available across Internet, 
-and for the execution of different web processing services.
-The expected outcome of using this toolkit is the capability to build, or compose, with a reasonable effort, 
-new customized analytics services, that embrace the needed or selected data sources and processing services. 
-In addition to that, keeping in mind how the scientific methodology works, the toolkit supports also the tracking of 
-information and dependencies for the assessment of output data.
+Indeed, the toolkit copes several specific issues, that can rise when working with federated services, such as in the case of 
+VLab _Marine Environmental Indicators_.
+The expected outcome of using this toolkit is the capability to compose, or extend with a reasonable effort, 
+new customized analytics services, that includes according to the needs a selection of data sources and processing services. 
 
-The toolkit includes:
-- data access functionalities, based on generalized API
+The toolkit includes the following functionalities:
+- data access functionalities, based on a generalized API definition
 - reader of input parameters, based on a generalized IDL
 - manager of logging/provenance information (will be based on W3C-PROV)
 - plot generator, for data in NetCDF format, convention xxx, and new convention defined here yyy
@@ -71,10 +59,6 @@ The implemented mockup method inside the repository shows how to download netCDF
 and how to receive the input parameters from an external call.
 
 ###### References
-- Balem Kevin, Garcia Juan Andrea, Bachelot Loïc, & Maze Guillaume. (2022, May 25). Blue-Cloud project, presentation. Blue-Cloud Marine Environmental Indicators Virtual Lab - The Ocean Regimes Notebook. Zenodo. https://doi.org/10.5281/zenodo.6584430 
-- Pittonet Sara, Giuffrida Rita, Mari Marialetizia, & Schaap Dick. (2022). Blue-Cloud Project, Deliverable D6.1, Fact Sheets for cluster projects and other core initiatives (Release 1) (Version 1). Zenodo. https://doi.org/10.5281/zenodo.5549789
-- Héder, Mihály. (2017). From NASA to EU: the evolution of the TRL scale in Public Sector Innovation. Innovation Journal. 22. 1. URL: https://www.innovation.cc/volumes-issues/vol22-no2.htm
-- Paul Groth; Luc Moreau; eds. PROV-OVERVIEW: An Overview of the PROV Family of Documents. 30 April 2013, W3C Note. URL: http://www.w3.org/TR/2013/NOTE-prov-overview-20130430/
 
 
 - TRL:
