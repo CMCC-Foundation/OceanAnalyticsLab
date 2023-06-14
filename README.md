@@ -14,7 +14,7 @@ The method includes some extra modules (which are still in development):
 New algorithms can be implemented in new methods with their specific interface for the inputs and outputs.
 
 The mockup method can generally be considered as a convenient baseline for a new implementation, which will have its own
-input parameters, access and download of the input data, processing, and output preparation.
+input parameters, download of input data, processing, and output preparation.
 
 To ease the following integration between interface/s and method/s, the recommended best practice consists 
 in implementing also a corresponding new mockup method which implement the new input/output interface, without actual actions 
