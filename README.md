@@ -1,13 +1,32 @@
-# Mockup SSI method
+# Overview
 
-This is a simple tools to deploy a working method on D4Science.
-In this method the first  prototype version of *daccess* module is released.
-With this module it is possible to download netCDF files from WEkEO and StorageHub.
+This tool is a simple data processing method that developers can deploy on D4Science, following the tutorial **mockup_method_guide.pptx**.
+The method includes some extra modules (which are still in development):
 
-## Instruction
+- **download module**: With this module it is possible to download netCDF files from WEkEO and StorageHub.
+- **log manager**: With this module it is possible to store some execution info, error info and to provide always the expected output files to WPS protoc also in case of errors
+- **input manager**: With this module it is possible to manage the input parameters string
+
+
+
+## How to implement a new method
+
+New algorithms can be implemented in new methods with their specific interface for the inputs and outputs.
+
+The mockup method can generally be considered as a convenient baseline for a new implementation, which will have its own
+input parameters, download of input data, processing, and output preparation.
+
+To ease the following integration between interface/s and method/s, the recommended best practice consists 
+in implementing also a corresponding new mockup method which implement the new input/output interface, without actual actions 
+(i.e.: data download, processing,...). 
+
+
+## Instructions to use the mockup method
 
 ### Preparation
+
 To run this tools locally, follow this steps:
+
 1. run  [get_variables.sh](./get_globalvariables.sh) passing as 
 argument the user token (you can find it when log into D4Science):
 
@@ -17,7 +36,7 @@ A file named **globalvariables.csv** will be created and used to download the fi
 ##### Attention: do not upload this file when upload the method, it will be created at runtime by dataminer itself
 
 
-2. Generate the WEkEO api key using the command (NOT IMPLEMENTED:
+2. Generate the WEkEO api key using the command:
 
 ` python wekeo_api_key.py wekeo_username wekeo_password`
 
@@ -25,22 +44,53 @@ then put your key in hdaKey param [daccess.py](./download/daccess.py)
 
 ##### Attention: by default the system use bluecloud proxy to request the token to access to hda, if you put your hda key the proxy will be disabled
 
-3. (Optional) you can change dirID in  [daccess.py](./download/daccess.py) if you want
-to download your dataset from StorageHub
 
+3. Setup Virtualenv
+
+```
+$ virtualenv venv
+$ source venv/bin/activate
+$ pip install -r requirements.txt
+```
 
 ### Run the algorithm
-The SSI method supports three different output types:ssi_percentile, ssi_percentile_min (default), ssi_fixed 
-And produces the following output:
--**SSIoutput.nc**: calculated SSI grid data in NetCDF format
--**SSImaps.png**: map plots  of the calculated SSI grid data
--**SSIseries.png**: timeseries plot of the total SSI grid data area 
+This repo contains three different mockups:
 
+- **Ocean Climate Mockup**
+- **Storm Severity Index Mockup**
+- **Ocean Pattern Mockup**
 
-To launch the tools simply run the command:
+It is present a unique main which give the possibility to choose wich mockup to exec.
 
-- `python SSI.py "{ 'data_source': ['C3S_ERA5_MEDSEA_1979_2020_STHUB'], 'working_domain': { 'box': [[-6, 36.0, 32.0, 44.0]] }, 'start_time': '1990-01-01', 'end_time': '2019-12-31' }"`-> download from StorageHub 
+*Be sure that the **indir** directory is not present before starting the tool*
 
-or
+Here the info about mockup execution:
 
-- `python SSI.py "{ 'id_output_type': 'ssi_percentile_min', 'data_source': ['C3S_ERA5_MEDSEA_1979_2020_STHUB'], 'working_domain': { 'box': [[-6, 36.0, 32.0, 44.0]] }, 'start_time': '1990-01-01', 'end_time': '2019-12-31', 'title': 'Annual_SSI_Med_Sea_1990_2020' , 'time_stepsize' : 1, 'time_stepunit': 'Years', 'threshold_perc': 'P98', 'threshold_value' : 15.0  }"` -> download from StorageHub
+```bash
+python mockup.py -h
+storagehubpythonfacility/command init
+usage: mockup.py [-h] [-o] [-s] [-p] input_parameters
+
+Mockup method
+
+positional arguments:
+  input_parameters     JSON-like string (use ' instead of ")
+
+options:
+  -h, --help           show this help message and exit
+  -o, --ocean_climate  Enable Ocean Climate mockup execution
+  -s, --ssi            Enable SSI mockup execution
+  -p, --ocean_pattern  Enable Ocean Pattern mockup execution
+```
+
+Then with the option arguments -o, -s, -p it is possible to choose a specific mockup.
+TO notice that the mockups don't exec some real computation. It depends on the specific mockup, but in general they performs
+only a download of the requested files and then simply copy some mockup outputs.
+
+Here some instruction to exec the three mockups:
+
+- Ocean Climate: `python mockup.py "{ 'id_output_type': 'mockup_download', 'id_field': 'sea_water_potential_temperature', 'data_source': ['MEDSEA_MULTIYEAR_PHY_006_004_STHUB'], 'working_domain': { 'box': [[-6, 30.15625, 36.28125, 45.96875]], 'depth_layers': [[1.472102, 5334.648]] }, 'start_time': '1987-01', 'end_time': '1987-01' }" -o`
+
+- Storm Severity Index: `python mockup.py "{ 'id_output_type': 'mockup_download', 'id_field': 'mass_concentration_of_chlorophyll_a_in_sea_water', 'data_source': ['OCEANCOLOUR_MED_CHL_L4_NRT_OBSERVATIONS_009_041'], 'working_domain': {'box': [[-6,30.15625,36.28125,45.96875]], 'depth_layers': [[1.472102,5334.648]]}, 'start_time': '2020-07', 'end_time': '2020-07'}" -s`
+
+- Ocean Pattern: `python mockup.py "{ 'id_output_type':'FIT_PRED', 'id_field':'sea_water_potential_temperature', 'k':6, 'working_domain': {'box': [[-5, 31, 36, 45]], 'depth_layers': [[10,300]]}, 'start_time': '1987-01', 'end_time': '1987-12', 'data_source': ['MEDSEA_MULTIYEAR_PHY_006_004_STHUB'] }" -p`

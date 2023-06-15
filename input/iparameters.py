@@ -68,29 +68,24 @@ def dict_to_json_like_str(json_str: str):
 class InputParameters:
     def __init__(self, input_parameters_string: str):
         self._input_parameters_dict: dict = get_json_input_parameters(input_parameters_string)
-        
-        #self._id_output_type: str = self._extract_mandatory_attribute('id_output_type')
-        #self._id_field: str = self._extract_mandatory_attribute('id_field')
-        
+        # A method must have at least 1 data source and 1 output type
+        self._id_output_type: str = self._extract_mandatory_attribute('id_output_type')
         self._data_source: list = self._extract_mandatory_attribute('data_source')
-        self._working_domain: dict = self._extract_mandatory_attribute('working_domain')
-        self._validate_wd()
-       
-        #The following parameters that have default values available
-        self._id_output_type: str = self._extract_optional_attribute('id_output_type')
-        self._id_field: str = self._extract_optional_attribute('id_field')
-            
 
+        self._working_domain: dict = self._extract_optional_attribute('working_domain')
+        self._id_field: str = self._extract_optional_attribute('id_field')
         self._year: str = self._extract_optional_attribute('year')
         self._month: int = self._extract_optional_attribute('month')
         self._start_time: str = self._extract_start_time_from_input_parameters()
         self._end_time: str = self._extract_end_time_from_input_parameters()
 
+        self._validate_wd()
         self._validate_input_parameters()
 
     def _validate_wd(self):
-        from input import working_domain as wd
-        wd.check_working_domain(self._working_domain)
+        if self._working_domain is not None:
+            from input import working_domain as wd
+            wd.check_working_domain(self._working_domain)
 
     def _extract_mandatory_attribute(self, name_attribute: str):
         value = self._input_parameters_dict.get(name_attribute, None)
@@ -121,9 +116,6 @@ class InputParameters:
 
     def get_output_type(self):
         return self._id_output_type
-
-    def update_output_type(self, new_output_type):
-        self._id_output_type=new_output_type
 
     def get_id_field(self):
         return self._id_field
@@ -160,10 +152,6 @@ class InputParameters:
 
     def update_end_time(self, new_end_time):
         self._end_time = new_end_time
-        
-    def update_id_field(self, new_id_field):
-        #JWN addition
-        self._id_field = new_id_field
 
     def to_json_str(self):
         dict_to_convert_full = self.__dict__
@@ -189,8 +177,14 @@ class InputParameters:
         Returns: raise an exception if there is an input parameter with a wrong type
 
         """
-        #if not isinstance(self._id_field, str):
-        if self._id_field is not None and not isinstance(self._id_field, str):    
+        if not isinstance(self._id_output_type, str):
+            self._raise_type_exception("data_source", "list")
+        if not isinstance(self._data_source, list):
+            self._raise_type_exception("data_source", "list")
+
+        if self._working_domain is not None and not isinstance(self._working_domain, dict):
+            self._raise_type_exception("working_domain", "dict")
+        if self._id_field is not None and not isinstance(self._id_field, str):
             self._raise_type_exception("_id_field", "str")
         if self._year is not None and not isinstance(self._year, str):
             self._raise_type_exception("_year", "str")
@@ -198,14 +192,8 @@ class InputParameters:
             self._raise_type_exception("_start_time", "str")
         if self._end_time is not None and not isinstance(self._end_time, str):
             self._raise_type_exception("_end_time", "str")
-
         if self._month is not None and not isinstance(self._month, int):
             self._raise_type_exception("month", "int")
-
-        if not isinstance(self._data_source, list):
-            self._raise_type_exception("data_source", "list")
-        if not isinstance(self._working_domain, dict):
-            self._raise_type_exception("working_domain", "dict")
 
     def _raise_type_exception(self, name_var, type_name):
         raise Exception("ERROR Input object: {} is not {}".format(name_var, type_name))
