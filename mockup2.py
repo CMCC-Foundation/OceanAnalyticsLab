@@ -4,6 +4,8 @@ import os
 import glob
 import shutil
 import sys
+import json
+import requests
 
 #Get auth info from env variables
 refreshtoken = os.environ["ccprefreshtoken"]
