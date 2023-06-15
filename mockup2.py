@@ -32,7 +32,7 @@ def getToken():
 #vrefolder = requests.get(workspace-url + "/vrefolder", headers={"Accept" : "application/json", "Authorization" : "Bearer " + tok}).json()
 
 def main():
-    f = open("/tmp/parameters.txt", "r")
+    f = open("/ccp_data/parameters.txt", "r")
     print("parameters are")
     print(f.read())
     print("A new token")
