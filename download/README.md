@@ -24,7 +24,7 @@ Some service like HDA supports the
 sub-setting of the domain, it means that the download file will
 contain only the region indicated in the working domain.
 
-Each infustrucure require a different format for the working domain.
+Each infrastructure requires a different format for the working domain.
 The formatting of the working domain in accordance with the 
 specifications of the specific infrastructure will be performed automatically.
 
