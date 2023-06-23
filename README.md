@@ -1,20 +1,24 @@
-The [VLab Marine Environmental Indicators](#the-vlab-marine-environmental-indicators) shows the effectiveness of the 
-implemented framework, based on the [MEI Development Toolkit](#mei-development-toolkit), that can be considered a contribution 
-to the improvement, promotion and consolidation of the Open Science approach in support to the Blue Economy development. 
+# Ocean Analytics Lab
+OceanAnalyticsLab is the place for the revise along the time of different solutions that scientific algorithms,
+in the field of the Ocean Science, can adopt to improve the implementation of the Open Science approach.
+The sketch of achievements presented here, concerns and can improve the evolution plan of community algorithms, 
+when the exploitation limit is reached, but still much lower than its _theoretical_ upper bound. 
 
-The achievement presented here, concerns and can impact the several algorithms that the Scientific Community develops, 
-and are currently facing challenges related to the BigData and to the sustainable development. 
 The implementation of those algorithms inside the community research infrastructures, will indeed deal with
-[the interoperability and reusability challenge](#the-interoperability-and-reusability-challenge) that is a fundamental 
-milestone to overcome before thinking about more ambitious projects for the Digital Twin of Earth.
+[the interoperability and reusability challenge](#12---the-interoperability-and-reusability-challenge), 
+that is a fundamental milestone to overcome before scaling up and targeting more ambitious projects.
+
+The first contribution to this repository comes from the [VLab Marine Environmental Indicators](#11-the-vlab-marine-environmental-indicators), 
+and shows the effectiveness of the implemented framework, based on the [MEI Development Toolkit](#1---mei-development-toolkit), 
+for a prompt deploy of algorithms in a production environment, considering as initial and fundamental needs, 
+those related to the input data access, and those related to the interoperability among algorithms and other network services.
 
 
-
-# MEI Development Toolkit
+## 1 - MEI Development Toolkit
 
 This toolkit aims to underpin the development of scientific algorithms which are exploiting geospatial data 
 for the extraction of new knowledge and indicators to serve the decision makers.
-The considered scope is related to the environment protection and sustainable blue economy.
+The considered scope is related to the environment protection and sustainable Blue Economy.
 
 ###### References
 - **The Global Risks Report 2022**, 17th Edition, World Economic Forum, ISBN: 978-2-940631-09-4
@@ -24,10 +28,10 @@ The considered scope is related to the environment protection and sustainable bl
 - Mathieu, Pierre-Philippe and Aubrecht, Christoph. **Earth Observation Open Science and Innovation**. 2018. DOI: 10.1007/978-3-319-65633-5
 - **United Nations Decade of Ocean Science for Sustainable Developments**, Challenges, https://www.oceandecade.org/challenges/
 
-# The VLab Marine Environmental Indicators
+### 1.1 The VLab Marine Environmental Indicators
 A new VLab for the environment monitoring was implemented inside the VRE framework D4Science, in the scope of Blue-Cloud EU project ([Grant Agreement No.862409](https://cordis.europa.eu/project/id/862409)).
 The VLab aims to provide analytics services to those users who are involved in the monitoring and management of marine areas.
-The VLab offers also several federated services to the scientific developers, for instance related to the data access, 
+The VLab, through the VRE framework, offers also several federated services to the scientific developers, for instance related to the data access, 
 storage and processing, which ease the development of new innovative solutions, and also the sharing of results.
 
 ###### References
@@ -48,7 +52,7 @@ storage and processing, which ease the development of new innovative solutions, 
 - Coppini, G., Marra, P., Lecci, R., Pinardi, N., Cretì, S., Scalas, M., Tedesco, L., D'Anca, A., Fazioli, L., Olita, A., Turrisi, G., Palazzo, C., Aloisio, G., Fiore, S., Bonaduce, A., Kumkar, Y. V., Ciliberti, S. A., Federico, I., Mannarini, G., Agostini, P., Bonarelli, R., Martinelli, S., Verri, G., Lusito, L., Rollo, D., Cavallo, A., Tumolo, A., Monacizzo, T., Spagnulo, M., Sorgente, R., Cucco, A., Quattrocchi, G., Tonani, M., Drudi, M., Nassisi, P., Conte, L., Panzera, L., Navarra, A., and Negro, G.: **SeaConditions: a web and mobile service for safer professional and recreational activities in the Mediterranean Sea**, Nat. Hazards Earth Syst. Sci., 17, 533–547, https://doi.org/10.5194/nhess-17-533-2017, 2017
 - United Nations Decade of Ocean Science for Sustainable Developments, Challenges, "**Challenge 9 - Skills, knowledge and technology for all**", https://www.oceandecade.org/challenges/
 
-# The Interoperability and Reusability Challenge
+### 1.2 - The Interoperability and Reusability Challenge
 The exploitation of datasets and algorithms, without barriers for the scientific investigation, is a highly desired condition, 
 and for the pursuing of this objective, the interoperability aspects play an important role, because it opens the door 
 to the reuse of verified/validated functionalities in multiple systems or projects, which is a fundamental condition for implementing the Open Science. 
